@@ -9,11 +9,6 @@ def index():
     print("in index")
     return render_template('index.html', test_context="this is a string from the OTHER side!")
 
-@app.route("/product.html")
-def product():
-    print("in index")
-return render_template('product.html', test_context="this is a string from the OTHER side!")
-
 @app.route('/js/<path:path>')
 def send_js(path):
     return send_from_directory('js', path)
