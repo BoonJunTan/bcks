@@ -19,9 +19,9 @@ def send_css(path):
     return send_from_directory('css', path)
 
 
-@app.route('/img/<path:path>')
+@app.route('/images/<path:path>')
 def send_img(path):
-    return send_from_directory('img', path)
+    return send_from_directory('images', path)
 
 
 @app.route('/fonts/<path:path>')
